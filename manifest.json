@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Pass to Δελτίο",
+    "version": "1.0",
+
+    "description": "Replaces the text '-pass' with 'δελτίο για-'.",
+
+    "icons": {
+        "48": "icons/icon-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["pass-to-deltio.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
+
